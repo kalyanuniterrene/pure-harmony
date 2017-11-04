@@ -11,7 +11,8 @@ function harmony_theme_setup()
 	if ( ! isset( $content_width ) ) $content_width = 640;
 	register_nav_menus(
 		array( 
-			'header-menu' => __( 'Header Menu', 'harmony' ), 
+			'top-left-menu' => __( 'Top Left Menu', 'harmony' ), 
+			'top-right-menu' => __( 'Top Right Menu', 'harmony' ), 
 		)
 	);
 }
@@ -104,7 +105,7 @@ function harmony_theme_comments_number( $count )
 }
 
 //Home Banner Post Types
-//add_action( 'init', 'harmony_home_banner_slider');
+add_action( 'init', 'harmony_home_banner_slider');
 function harmony_home_banner_slider(){
 
 	//banner post type
@@ -118,7 +119,7 @@ function harmony_home_banner_slider(){
 		'has_archive' => true,
 		'menu_icon' => 'dashicons-images-alt',
 		'rewrite' => array('slug' => 'home-slider'),
-		'supports' => array( 'title','thumbnail' ),
+		'supports' => array( 'title','thumbnail', 'editor' ),
 		)
 	);
 }
