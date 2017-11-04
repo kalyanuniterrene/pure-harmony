@@ -81,12 +81,12 @@ jQuery(document).on('click','.btn-read-more a', function(e){
 if(jQuery(this).attr('class') == 'more'){
   jQuery(this).addClass('less').removeClass('more');
   jQuery(this).html(less);
-  jQuery(this).parent().siblings('p').slideDown('fast');
+  jQuery(this).parent().parent().find('.demo').slideDown('fast');
   
 }else{
    jQuery(this).addClass('more').removeClass('less');
    jQuery(this).html(more);
-   jQuery(this).parent().siblings('p').slideUp('fast');
+   jQuery(this).parent().parent().find('.demo').slideUp('fast');
 }
 
 
