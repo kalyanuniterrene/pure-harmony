@@ -221,7 +221,7 @@ $.fn.sliderUi = function(options) {
 
 })(jQuery);
 
-$('.slider-container').sliderUi({
+jQuery('.slider-container').sliderUi({
    speed: 450,
    cssEasing: 'cubic-bezier(0.250, 0.460, 0.450, 0.940)',
   caption: true
