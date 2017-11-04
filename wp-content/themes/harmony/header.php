@@ -23,7 +23,7 @@
             <span class="phone">
               <i class="fa fa-phone"></i>
             </span>
-            (561) 203-5407
+            <?php the_field('phone_number_format');?>
           </p>
         </div>
 
@@ -34,10 +34,28 @@
           </div>
 
           <div class="social">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <ul>
+
+             
+            
+          <?php
+
+if( have_rows('social_links') ):
+
+ 	
+    while ( have_rows('social_links') ) : the_row();
+?>
+        
+        
+ <li><a href="<?php the_sub_field('social_media_link');?>"><i class="fa fa-<?php the_sub_field('social_icons');?>"></i></a></li>
+  <?php
+    endwhile;
+
+
+
+endif;
+
+?>
             </ul>
           </div>
         </div>
@@ -63,23 +81,9 @@
 
                  <div class="f_left"> 
                      <ul> 
-                         <li>
-                          <a href="#">HOME </a> 
-                         </li>
-                         <li>
-                          <a href="#" class="active">PENDANT </a> 
-
-                         </li>
-
-                         <li>
-
-                          <a href="#">HEALTH ISSUES   </a>  
-
-                         </li>
-
-                         <li>
-
-                          <a href="#"> ABOUT ROBERT  </a> 
+                        <?php
+                        wp_nav_menu( array( 'container' => '', 'menu_class' => 'clearfix', 'menu_id' => '', 'theme_location' => 'top-left-menu', 'link_before' => '', 'link_after' => '', ));
+                        ?>
 
                          </li>
 
@@ -93,29 +97,9 @@
 
                   <ul>  
 
-                         <li>
-
-                          <a href="#">SERVICES </a> 
-
-                         </li>
-
-                         <li>
-
-                          <a href="#">ONLINE SHOP</a> 
-
-                         </li>
-
-                         <li>
-
-                          <a href="#">TESTIMONIAL</a> 
-
-                         </li>
-
-                         <li>
-
-                          <a href="#"> CONTACT</a>  
-
-                         </li>
+                          <?php
+                        wp_nav_menu( array( 'container' => '', 'menu_class' => 'clearfix', 'menu_id' => '', 'theme_location' => 'top-right-menu', 'link_before' => '', 'link_after' => '', ));
+                        ?>
 
 
 
@@ -135,41 +119,40 @@
 
                 <div class="slider" id="slider">
 
-                    <div class="slide"> 
 
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/banner_pic1.jpg" alt=""> 
+                           <?php
+
+                	 $banner_args = array( 'post_type' => 'home-slider', 'posts_per_page' => -1, 'order' => 'ASC', 'orderby' => 'date' );
+				        $banner_query = new WP_Query( $banner_args ); 
+				        while ( $banner_query->have_posts() ) 
+
+		        		{ 
+
+		        			$banner_query->the_post(); 
+
+		        			$image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
+		        			?>
+
+		        			<div class="slide"> 
+
+                        <img src="<?php echo $image[0] ?>" alt=""> 
 
                         <div class="content">
 
-                            <h4>Enter The New Paradigm of</h4>
-
-                            <h1>OPTIMUM HEALTH AND WELLNESS</h1>
-
-                            <a href="#" class="btn book_btn">BOOK ONLINE <i class="fa fa-long-arrow-down"></i></a>
+                            <?php the_content();?>
+                            <a href="<?php the_field('banner_button_link');?>" class="btn book_btn"><?php the_field('banner_button_text');?> <i class="fa fa-long-arrow-down"></i></a>
 
                         </div>
 
                     </div>
+			
 
-                    <div class="slide"> 
+						<?php
+					}
 
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/banner_pic2.jpg" alt=""> 
+					wp_reset_postdata();
 
-                        <div class="content">
-
-                            <h4>Enter The New Paradigm of</h4>
-
-                            <h1>OPTIMUM HEALTH AND WELLNESS</h1>
-
-                            <a href="#" class="btn book_btn">BOOK ONLINE <i class="fa fa-long-arrow-down"></i></a>
-
-                            
-
-                        </div>
-
-                    </div>
-
-                    
+                     ?>
 
                 </div>
 
