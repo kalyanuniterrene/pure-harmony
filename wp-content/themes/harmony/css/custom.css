@@ -545,7 +545,9 @@ nav ul li a:hover, nav ul li a.active{
 
 	font-family: 'Lato', sans-serif;
 
-	font-weight: 700
+	font-weight: 700;
+	line-height: 28px;
+
 
 
 
@@ -562,6 +564,7 @@ nav ul li a:hover, nav ul li a.active{
 	font-weight: 700;
 
 	text-transform: uppercase;
+	line-height: 28px;
 
 }
 
