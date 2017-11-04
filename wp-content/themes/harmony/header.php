@@ -177,4 +177,12 @@ endif;
           <img src="<?php echo get_template_directory_uri(); ?>/images/banner_carve.png" alt="#">
 
         </div>
+
+        <?php if( is_page('all-podcasts') ){ ?>
+        <div id="inner_banner">           
+           <img src="images/inner_banner.jpg" alt="#">
+           <h4>Enter The New Paradigm of</h4>
+           <h1>OPTIMUM HEALTH AND WELLNESS</h1>
+        </div>
+        <?php } ?>
   </header>
