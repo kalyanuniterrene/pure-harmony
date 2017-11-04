@@ -492,6 +492,8 @@ get_header(); ?>
 
                       </li>
 
+                      <a href="#" class="btn podcast">VIEW ALL GALLERY <i class="fa fa-long-arrow-right"></i></a>
+
                     </ul>
 
                   </div>
@@ -1173,6 +1175,7 @@ Regulation</li>
          <h3> TESTIMONIALS </h3>
 
          <h2> WHAT THEY SAY </h2>
+         <a href="#" class="btn podcast">VIEW ALL PODCAST <i class="fa fa-long-arrow-right"></i></a>
 
        </div>
 
