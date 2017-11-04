@@ -20,68 +20,46 @@ get_header(); ?>
             
 
             <div class="row clearfix">
-
+              <?php if( have_rows('pure_harmony_features') ): ?>
               <div class="f_lef description">
-
+                <?php while( have_rows('pure_harmony_features') ): the_row(); ?>
                 <div class="row clearfix">
 
                   <div class="icon f_left">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon1.png" alt="#">
+                    <img src="<?php the_sub_field('pure_harmony_feature_icon'); ?>">
 
                   </div>
 
                   <div class="contnt f_right">
 
-                    <h4>Enter the New Paradigm of  Optimum Health & Well Being</h4>
+                    <h4><?php the_sub_field('pure_harmony_feature_title'); ?></h4>
 
-                    <p>The Pure Harmony Pendant works miracles by using the science of quantum physics through the power of harmonic resonance to help restore the Body, Mind, and Spirit back into harmony and balance.  As a result of this restorative process, past trauma, disharmony, and imbalances just fall away. </p>
-
-                  </div>
-
-                </div>
-
-                <div class="row clearfix">
-
-                  <div class="icon f_left">
-
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon2.png" alt="#">
-
-                  </div>
-
-                  <div class="contnt f_right">
-
-                    <h4>Get your Mind and Body in Balance </h4>
-
-                    <p>The Pure Harmony Pendant works miracles by using the science of quantum physics through the power of harmonic resonance to help restore the body’s Biophoton Field, Polarity, and Core Vibrational Blueprint back into harmony and balance.</p>
+                    <?php the_sub_field('pure_harmony_feature_content'); ?>
 
                   </div>
 
                 </div>
-
+                <?php endwhile; ?>
+               
               </div>
+              <?php endif; ?>
 
               <div class="f_right sell">
-
+                <?php if( have_rows('pure_harmony_featured_images') ): ?>
                 <div class="row">
-
+                  <?php while( have_rows('pure_harmony_featured_images') ): the_row(); ?>
                   <div class="sell_box">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/product1.png" alt="#">
+                    <img src="<?php the_sub_field('block_feature_image'); ?>">
 
-                    <p>Polished or Brushed Finish</p>
-
-                  </div>
-
-                  <div class="sell_box">
-
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/product2.png" alt="#">
-
-                    <p>Solid Stainless Steel</p>
+                    <p><?php the_sub_field('block_feature_image_title'); ?></p>
 
                   </div>
+                  <?php endwhile; ?>
 
                 </div>
+                <?php endif; ?>
 
                 <div class="row">
 
@@ -123,7 +101,7 @@ get_header(); ?>
 
                   <ul class="visa">
 
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/images/visa.png" alt="#"></li>
+                    <li><img src="<?php the_field('cards_accepted_image'); ?>"></li>
 
                   </ul>
 
@@ -131,7 +109,7 @@ get_header(); ?>
 
                 <div class="row">
 
-                  <p class="note"><span>Please note...</span> <em>pendant will only harmonized with one person's biophoton field and cannot be used with mulitple people.</em></p>
+                  <p class="note"><?php the_field('purchase_notice'); ?></p>
 
                 </div>
 
@@ -154,63 +132,21 @@ get_header(); ?>
 
               <span class="section-devider"> </span>
 
-              <h5>The Future of Healing is Today</h5>
-
-              <h4>The Pure Harmony Way</h4>
-
-              <h2>Positively Impacting </h2>
+              <?php the_field('positive_impact_title'); ?>
 
               </div>
 
               <div class="row list">
-
+                <?php if( have_rows('positive_impacts') ): ?>
                 <ul>
+                  <?php while( have_rows('positive_impacts') ): the_row(); ?>
 
-                  <li>Energy</li>
+                  <li><?php the_sub_field('impacts'); ?></li>
 
-                  <li>Sleep</li>
-
-                  <li>EMF Protection</li>
-
-                  <li>Strength</li>
+                  <?php endwhile; ?>
 
                 </ul>
-
-                <ul>
-
-                  <li>Detoxification</li>
-
-                  <li>Stress</li>
-
-                  <li>Fatigue</li>
-
-                  <li>Metabolism</li>
-
-                </ul>
-
-                <ul>
-
-                  <li>Performance</li>
-
-                  <li>Inner Peace</li>
-
-                  <li>Clarity/Focus</li>
-
-                  <li>Stamina</li>
-
-                </ul>
-
-                <ul>
-
-                  <li>Recovery</li>
-
-                  <li>Aches/Pains</li>
-
-                  <li>Alignment</li>
-
-                  <li>Digestion</li>
-
-                </ul>
+                <?php endif; ?>
 
               </div>
 
@@ -227,7 +163,7 @@ get_header(); ?>
 
             <span class="section-devider"> </span>
 
-            <h2> HOW DOES IT WORK </h2>
+            <h2> <?php the_field('work_section_title'); ?></h2>
 
           </div>
 
@@ -237,59 +173,30 @@ get_header(); ?>
 
             <div class="left_content f_left">
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies diam varius diam euismod ornare. Integer luctus mi hendrerit lacus dictum molestie. Curabitur eros erat, vehicula iaculis sagittis id, dapibus nec diam. Ut et imperdiet diam. Praesent et malesuada libero. Sed nibh ante, lobortis iaculis consectetur vitae,</p>
+              <?php the_field('work_section_content'); ?>
 
+              <?php if( have_rows('work_section_videos') ): ?>
               <div class="video_container">
-
-                <video width="100%" controls poster="<?php echo get_template_directory_uri(); ?>/images/video1_poster.jpg">
-
-              <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
-
-                <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mov" type="video/mov">
-
-             <!--  <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-            </video>
-
+                <?php while( have_rows('work_section_videos') ): the_row(); ?>
+                <video width="100%" controls poster="<?php the_sub_field('upload_video_poster'); ?>">
+                <source src="<?php the_sub_field('upload_video_file'); ?>" type="video/mp4">
+                <source src="<?php the_sub_field('upload_mov_video_file'); ?>" type="video/mov">
+                </video>
+                <?php endwhile; ?>
               </div>
-
+              <?php endif; ?>
             </div>
 
             <div class="right_content f_right">
 
               
-
-              <div class="box">
-
-                <h3><span>01.</span>Release</h3>
-
-                <p>Past Trauma and Energy Blocks</p>
-
-              </div>
-
-              <div class="box">
-
-                <h3><span>02.</span>REstore</h3>
-
-                <p>Natural Core Vibrational Blueprint</p>
-
-              </div>
-
-              <div class="box">
-
-                <h3><span>03.</span>rejuvenate</h3>
-
-                <p>Biophoton Field Regulation</p>
-
-              </div>
-
-              <div class="box">
-
-                <h3><span>04.</span>RESONATE</h3>
-
-                <p>In Pure Harmony</p>
-
-              </div>
+              <?php if( have_rows('how_it_works') ): ?>
+                <?php while( have_rows('how_it_works') ): the_row(); ?>
+                <div class="box">
+                  <?php the_sub_field('how_featured_points'); ?>
+                </div>
+                <?php endwhile; ?>
+              <?php endif; ?>
 
             </div> 
 
@@ -309,9 +216,7 @@ get_header(); ?>
 
                <span class="section-devider"> </span>
 
-               <h2> How To Activate </h2>
-
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies diam varius diam euismod ornare. Integer luctus mi hendrerit lacus dictum molestie. Curabitur eros erat, vehicula iaculis sagittis id, dapibus nec diam. Ut et imperdiet diam. Praesent et malesuada libero. Sed nibh ante, lobortis iaculis consectetur vitae,</p>
+               <?php the_field('activate_section_content'); ?>
 
            </div> 
 
@@ -319,15 +224,19 @@ get_header(); ?>
       </div>
       <div class="activate-right activate-col">
           <div class="video_container">
-            <video width="100%" controls poster="<?php echo get_template_directory_uri(); ?>/images/video1_poster.jpg">
-              <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
-              <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mov" type="video/mov">
+            <?php if( have_rows('activate_videos') ): ?>
+                <?php while( have_rows('activate_videos') ): the_row(); ?>
+            <video width="100%" controls poster="<?php the_sub_field('active_video_poster'); ?>">
+              <source src="<?php the_sub_field('activate_video_file'); ?>" type="video/mp4">
+              <source src="<?php the_sub_field('activate_mov_video_file'); ?>" type="video/mov">
              <!--  <source src="mov_bbb.ogg" type="video/ogg"> -->
             </video>
+            <?php endwhile; ?>
+              <?php endif; ?>
           </div>
           <div class="pdf-link clear">
             <div class="pdf-text">
-              <a href="#">Have a pendant...click here for activation  directions -PDF</a>
+              <a href="<?php the_field('pdf_link'); ?>"><?php the_field('pdf_information'); ?></a>
             </div>
             <div class="pdf-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/pdf-icon.png" alt="#"></div>
           </div>
@@ -341,21 +250,19 @@ get_header(); ?>
               <div class="robert-head">
                 <div class="section-heading">
                     <span class="section-devider"> </span>
-                    <h2> WATCH ROBERT </h2>
+                    <h2><?php the_field('watch_robert_section_title'); ?></h2>
                 </div>
               </div>
-              <h4>IN ACTION WITH WENDY MEYERS</h4>
+              <h4><?php the_field('watch_robert_section_sub_title'); ?></h4>
               <div class="robert-content-wrap clearfix">
                   <div class="robert-right-video">
-                    <iframe width="100%" height="400" height="315" src="https://www.youtube.com/embed/zxb82RlhvPs" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="100%" height="400" height="315" src="<?php the_field('watch_robert_youtube_link'); ?>" frameborder="0" allowfullscreen></iframe>
 
-                    <a href="#" class="btn podcast">VIEW ALL PODCAST <i class="fa fa-long-arrow-right"></i></a>
+                    <a href="<?php the_field('podcast_button_link'); ?>" class="btn podcast"><?php the_field('podcast_button_text'); ?> <i class="fa fa-long-arrow-right"></i></a>
                   </div>
                   <div class="robert-left-content">
                     <div class="podcast-text">
-                      <p>
-                        Because of the life changing results that I received through Autonomic Response Testing, I made the decision to utilize Autonomic Response Testing extensively in my Theocentric Holistic Healing practice.  I truly feel this is the best way for me to “pay it forward” and to turn my own personal suffering into blessings for others who are also in need
-                      </p>
+                      <?php the_field('watch_robert_section_content'); ?>
                     </div>
                   </div>
                 </div>
@@ -394,9 +301,7 @@ get_header(); ?>
 
                  <span class="section-devider"> </span> 
 
-                 <h2> BulletProof Conference 2017 </h2>
-
-                 <h4>Robert and the Pure Harmony Pendant Rocked the House</h4>
+                 <?php the_field('conference_section_title'); ?>
 
               </div>
 
@@ -410,14 +315,18 @@ get_header(); ?>
 
                   <div class="videoHolder">
 
-                    <video poster="<?php echo get_template_directory_uri(); ?>/images/gallery_video_poster.jpg" controls="">
+                    <?php if( have_rows('conference_videos') ): ?>
+                      <?php while( have_rows('conference_videos') ): the_row(); ?>
 
-                      <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
+                    <video poster="<?php the_sub_field('conference_video_poster'); ?>" controls="">
 
-                        <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mov" type="video/mov">
+                      <source src="<?php the_sub_field('conference_video'); ?>" type="video/mp4">
+
+                        <source src="<?php the_sub_field('conference_mov_video'); ?>" type="video/mov">
 
                     </video>
-
+                    <?php endwhile; ?>
+                    <?php endif; ?>
                   </div>
 
                 </div>
@@ -462,7 +371,7 @@ $banner_args = array( 'post_type' => 'harmony-gallery', 'posts_per_page' => -1, 
 
                       
 
-                      <a href="#" class="btn podcast">VIEW ALL GALLERY <i class="fa fa-long-arrow-right"></i></a>
+                      <a href="<?php the_field('gallery_button_link'); ?>" class="btn podcast"><?php the_field('gallery_button_text'); ?> <i class="fa fa-long-arrow-right"></i></a>
 
                     </ul>
 
@@ -484,8 +393,7 @@ $banner_args = array( 'post_type' => 'harmony-gallery', 'posts_per_page' => -1, 
        <div class="stressors-header">
           <div class="section-heading">
                 <span class="section-devider"> </span>
-                <h2> The 6 Stressors/Trauma </h2>
-                <h4>Detect Your Hidden Kryptonite</h4>
+                <?php the_field('trauma_section_title'); ?>
           </div>
 
        </div>
@@ -494,31 +402,13 @@ $banner_args = array( 'post_type' => 'harmony-gallery', 'posts_per_page' => -1, 
 
           <div class="stressors-right">
 
-         <img src="<?php echo get_template_directory_uri(); ?>/images/stressors-right-image.png" alt="#">
+         <img src="<?php the_field('trauma_section_image'); ?>">
 
         </div>
 
       <div class="stressors-left">
 
-        <p>A person throughout a lifetime is exposed to a variety of harmful environmental stressors that are typically found in the above graph. Any of these stressors can negatively impact the body on a cellular level causing oxidative stress (Loss of electrons) and inflammation.</p>
-
-        <p>This stress can potentially cause healthy coherent Light emissions from the chromatin in the cells to become incoherent and unhealthy, impairing the regulation of Light transmissions throughout the body's Biophoton field, and causing a cascade of disharmony, imbalances, and illness. The polarity of any one of the 13-axis found in the human Biophoton Field may also be negatively impacted, Leading to severe fatigue and illness.
-
-The first steps in your journey to optimum health and performance are....</p>
-
-        <ul>
-
-          <li>Discovering and addressing your personal hidden kryptonite</li>
-
-          <li>Restoring coherent light emissions from the cells</li>
-
-          <li>Restoring Biophoton Field regulation</li>
-
-          <li>Correcting Polarity issues</li>
-
-        </ul>
-
-        <p>If any of the stressors/trauma found in any of the 6 categories are not detected and addressed, the result can be impaired light emissions negatively impacting the regulation of the body's biochemistry on every level.</p>
+        <?php the_field('trauma_section_content'); ?>
 
       </div>
 
@@ -539,7 +429,7 @@ The first steps in your journey to optimum health and performance are....</p>
 
       <div class="suport-right">
 
-       <img src="<?php echo get_template_directory_uri(); ?>/images/suport-right.png" />
+       <img src="<?php the_field('super_hero_section_image'); ?>" />
 
       </div>
 
@@ -549,11 +439,7 @@ The first steps in your journey to optimum health and performance are....</p>
 
          <span class="section-devider section-devider-yellow"> </span>
 
-         <h5> Book a One on One Consultation </h5>
-
-         <h4> Perform Like a Super Hero Everyday </h4>
-
-         <p> Get 1 on 1 expert consultation to help you detect and remove hidden Kryptonite from your home. office and work environment. </p>
+         <?php the_field('super_hero_section_title'); ?>
 
        </div>
 
@@ -629,25 +515,22 @@ The first steps in your journey to optimum health and performance are....</p>
 
         <div class="text-col f_left ">
 
-         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit sit amet varius eleifend, est neque fermentum lectus, at condimentum mauris tortor non nibh. Maecenas bibendum aliquam accumsan. Pellentesque non orci eget ante vehicula laoreet non et est. Morbi posuere varius commodo. Phasellus ac congue orci, eget consectetur nibh. </p>
-
-         <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porttitor mauris et risus euismod, varius vehicula sem tincidunt. Quisque eu scelerisque magna. Praesent dui libero, euismod nec lorem et, blandit vestibulum ante. Aenean nec ultricies dui. Mauris id sem facilisis, molestie nulla quis, tincidunt felis. Proin venenatis eros ut dolor rutrum, ultricies porta mauris tincidunt. Aliquam eu pulvinar velit. Nulla ultricies lacus sed lacinia egestas. </p>
+         <?php the_field('super_hero_section_content'); ?>
 
         </div>
 
         
 
         <div class="video-col f_right">
-
-          <video controls poster="<?php echo get_template_directory_uri(); ?>/images/biophoton-poster.jpg" width="100%">
-
-              <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
-
-                <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mov" type="video/mov">
-
+          <?php if( have_rows('super_hero_video') ): ?>
+            <?php while( have_rows('super_hero_video') ): the_row(); ?>
+          <video controls poster="<?php the_sub_field(''); ?>" width="100%">
+              <source src="<?php the_sub_field('super_hero_video'); ?>" type="video/mp4">
+              <source src="<?php the_sub_field('super_hero_mov_video'); ?>" type="video/mov">
              <!--  <source src="mov_bbb.ogg" type="video/ogg"> -->
-
             </video>
+            <?php endwhile; ?>
+            <?php endif; ?>
 
         </div>
 
@@ -667,9 +550,7 @@ The first steps in your journey to optimum health and performance are....</p>
 
          <span class="section-devider"> </span>
 
-         <h1> HRV </h1>
-
-         <h2 class="yellow-heading"> HEART RATE VARIABILITY </h2>
+         <?php the_field('heart_rate_section_title'); ?>
 
        </div>
 
@@ -678,24 +559,20 @@ The first steps in your journey to optimum health and performance are....</p>
        <div class="BioPhoton-box clearfix">
 
         <div class="video-col f_left">
-
-         <video controls poster="<?php echo get_template_directory_uri(); ?>/images/biophoton-poster.jpg" width="100%">
-
-              <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
-
-                <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mov" type="video/mov">
-
-             <!--  <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-            </video>
-
+        <?php if( have_rows('heart_rate_video') ): ?>
+          <?php while( have_rows('heart_rate_video') ): the_row(); ?>
+         <video controls poster="<?php the_sub_field('heart_rate_video_poster'); ?>" width="100%">
+          <source src="<?php the_sub_field('heart_rate_video_file'); ?>" type="video/mp4">
+          <source src="<?php the_sub_field('heart_rate_mov_video_file'); ?>" type="video/mov">
+          <!--  <source src="mov_bbb.ogg" type="video/ogg"> -->
+          </video>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </div>
 
         <div class="text-col f_right">
 
-         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit sit amet varius eleifend, est neque fermentum lectus, at condimentum mauris tortor non nibh. Maecenas bibendum aliquam accumsan. Pellentesque non orci eget ante vehicula laoreet non et est. Morbi posuere varius commodo. Phasellus ac congue orci, eget consectetur nibh. </p>
-
-         <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porttitor mauris et risus euismod, varius vehicula sem tincidunt. Quisque eu scelerisque magna. Praesent dui libero, euismod nec lorem et, blandit vestibulum ante. Aenean nec ultricies dui. Mauris id sem facilisis, molestie nulla quis, tincidunt felis. Proin venenatis eros ut dolor rutrum, ultricies porta mauris tincidunt. Aliquam eu pulvinar velit. Nulla ultricies lacus sed lacinia egestas. </p>
+         <?php the_field('heart_rate_content'); ?>
 
         </div>
 
@@ -719,31 +596,19 @@ The first steps in your journey to optimum health and performance are....</p>
 
         <div class="BioPhoton-Field-left">
 
-         <h4> UNHEALTHY HRV  </h4>
+         <?php the_field('unhealthly_hrv_section_title'); ?>
 
-         <h5> Stressors / Trauma </h5>
-
-         <p> Incoherent Heart Rhythms </p>
-
+          <?php if( have_rows('unhealthy_hrv_facts') ): ?>
           <ul>
+            <?php while( have_rows('unhealthy_hrv_facts') ): the_row(); ?>
 
-           <li>Sympathetic Response Fight or Flight </li>
-
-           <li>Increased Inflammation</li>
-
-           <li>Negatively Impacting Performance</li>
-
-           <li>Inhibits Brain Function</li>
-
-           <li>Elevated Cortisol Levels</li>
-
-           <li>Anxiety/Frustration</li>
-
-           <li>Disruptive Sleep</li>
+           <li><?php the_sub_field('unhealthy_facts'); ?></li>
+           <?php endwhile; ?>
 
           </ul>
+          <?php endif; ?>
 
-          <span class="bioPhoton-field-bottom">  Sick HRV = Sick body   </span>
+          <span class="bioPhoton-field-bottom">  <?php the_field('unhealthy_hrv_in_brief'); ?>  </span>
 
         </div>
 
@@ -751,7 +616,7 @@ The first steps in your journey to optimum health and performance are....</p>
 
         <div class="BioPhoton-Field-center ">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/images/biophoton-field-img-1.jpg" />
+          <img src="<?php the_field('comparison_featured_image'); ?>" />
 
         </div>
 
@@ -759,35 +624,18 @@ The first steps in your journey to optimum health and performance are....</p>
 
         <div class="BioPhoton-Field-right">
 
-         <h4> HEALTHY HRV </h4>
+         <?php the_field('healthly_hrv_section_title'); ?>
 
-         <h5> No Stressors / Trauma </h5>
-
-         <p> Coherent Heart Rhythms </p>
-
+          <?php if( have_rows('healthy_hrv_facts') ): ?>
           <ul>
-
-           <li>Parasympathetic Response
-
-Rest & Regeneration</li>
-
-           <li>Lowered Inflammation</li>
-
-           <li>Positively Impacting
-
-Performance</li>
-
-           <li>Facilitates Brain Function</li>
-
-           <li>Balanced Cortisol Levels </li>
-
-           <li>Appreciation/Peace</li>
-
-           <li>Restful Revitalizing Sleep</li>
+            <?php while( have_rows('healthy_hrv_facts') ): the_row(); ?>
+              <li><?php the_sub_field('healthy_facts'); ?></li>
+              <?php endwhile; ?>
 
           </ul>
+          <?php endif; ?>
 
-          <span class="bioPhoton-field-bottom">  Healthy HRV = Healthy body </span>
+          <span class="bioPhoton-field-bottom"><?php the_field('healthy_biophoton_in_brief'); ?></span>
 
         </div>
 
