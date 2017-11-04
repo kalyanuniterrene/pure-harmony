@@ -179,7 +179,7 @@ function harmony_testimonials(){
 		'has_archive' => true,
 		'menu_icon' => 'dashicons-testimonial',
 		'rewrite' => array('slug' => 'harmony-testimonials'),
-		'supports' => array( 'title','thumbnail'),
+		'supports' => array( 'title','thumbnail','editor'),
 		)
 	);
 }
