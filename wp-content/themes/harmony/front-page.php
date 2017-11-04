@@ -755,15 +755,11 @@ The first steps in your journey to optimum health and performance are....</p>
 
           <ul>
 
-           <li>Sympathetic Response 
-
-Fight or Flight </li>
+           <li>Sympathetic Response Fight or Flight </li>
 
            <li>Increased Inflammation</li>
 
-           <li>Negatively Impacting 
-
-Performance</li>
+           <li>Negatively Impacting Performance</li>
 
            <li>Inhibits Brain Function</li>
 

@@ -137,7 +137,7 @@ function harmony_podcasts(){
 			),
 		'public' => true,
 		'has_archive' => true,
-		'menu_icon' => 'dashicons-images-alt',
+		'menu_icon' => 'dashicons-video-alt',
 		'rewrite' => array('slug' => 'harmony-podcasts'),
 		'supports' => array( 'title','thumbnail'),
 		)
@@ -157,8 +157,28 @@ function harmony_gallery(){
 			),
 		'public' => true,
 		'has_archive' => true,
-		'menu_icon' => 'dashicons-images-alt',
+		'menu_icon' => 'dashicons-format-gallery',
 		'rewrite' => array('slug' => 'harmony-gallery'),
+		'supports' => array( 'title','thumbnail'),
+		)
+	);
+}
+
+//Testimonials Post Types
+add_action( 'init', 'harmony_testimonials');
+function harmony_testimonials(){
+
+	//testimonials post type
+	register_post_type( 'harmony-testimonials',
+	array(
+		'labels' => array(
+			'name' => __( 'Testimonials' ),
+			'singular_name' => __( 'Testimonial' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'menu_icon' => 'dashicons-testimonial',
+		'rewrite' => array('slug' => 'harmony-testimonials'),
 		'supports' => array( 'title','thumbnail'),
 		)
 	);
