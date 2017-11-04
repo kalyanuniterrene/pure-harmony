@@ -13,11 +13,7 @@ get_header(); ?>
 
              <span class="section-devider"> </span>
 
-             <h5>Know Our Technology</h5>
-
-             <h4>Experience the Results</h4>
-
-             <h2> Pure Harmony PENDANT </h2>
+             <?php the_field('pure_harmony_section_title'); ?>
 
           </div>
 

@@ -112,7 +112,7 @@ endif;
     </nav>
 
     
-
+        <?php if( is_front_page() ){ ?>
         <div id="banner">           
 
             <div class="slider-container">
@@ -177,6 +177,7 @@ endif;
           <img src="<?php echo get_template_directory_uri(); ?>/images/banner_carve.png" alt="#">
 
         </div>
+        <?php } ?>
 
         <?php if( is_page('all-podcasts') ){ ?>
         <div id="inner_banner">           
