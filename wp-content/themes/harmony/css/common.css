@@ -248,6 +248,14 @@ input[type="submit"]:hover {
 
 }
 
+
+
+		
+
+	
+
+	
+
 	
 
 ::-moz-placeholder {
@@ -276,41 +284,41 @@ input[type="submit"]:hover {
 
 ::selection {
 
-	background: #eca61d;
+	background: #1a4b7c;
 
-	color: #000;
+	color: #fff;
 
 }
 
 ::-moz-selection {
 
- background:#eca61d;
+ background:#1a4b7c;
 
- color:#000;
+ color:#fff;
 
 }
 
 ::-webkit-selection {
 
- background:#eca61d;
+ background:#1a4b7c;
 
- color:#000;
+ color:#fff;
 
 }
 
 ::-o-selection {
 
- background:#eca61d;
+ background:#1a4b7c;
 
- color:#000;
+ color:#fff;
 
 }
 
 ::-ms-selection {
 
- background:#eca61d;
+ background:#1a4b7c;
 
- color:#000;
+ color:#fff;
 
 }
 

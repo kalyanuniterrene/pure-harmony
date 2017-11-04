@@ -807,9 +807,10 @@ Performance</li>
 
          <span class="section-devider"> </span>
 
-         <h1> BioPhoton Field </h1>
+         <!-- <h1> BioPhoton Field </h1>
 
-         <h2 class="yellow-heading"> Your Light Metabolism </h2>
+         <h2 class="yellow-heading"> Your Light Metabolism </h2> -->
+         <?php the_field('biophoton_section_title');?>
 
        </div>
 
@@ -819,9 +820,7 @@ Performance</li>
 
         <div class="text-col f_left ">
 
-         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit sit amet varius eleifend, est neque fermentum lectus, at condimentum mauris tortor non nibh. Maecenas bibendum aliquam accumsan. Pellentesque non orci eget ante vehicula laoreet non et est. Morbi posuere varius commodo. Phasellus ac congue orci, eget consectetur nibh. </p>
-
-         <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porttitor mauris et risus euismod, varius vehicula sem tincidunt. Quisque eu scelerisque magna. Praesent dui libero, euismod nec lorem et, blandit vestibulum ante. Aenean nec ultricies dui. Mauris id sem facilisis, molestie nulla quis, tincidunt felis. Proin venenatis eros ut dolor rutrum, ultricies porta mauris tincidunt. Aliquam eu pulvinar velit. Nulla ultricies lacus sed lacinia egestas. </p>
+         <?php the_field('biophoton_section_content');?>
 
         </div>
 
@@ -829,15 +828,39 @@ Performance</li>
 
         <div class="video-col f_right">
 
-          <video controls poster="<?php echo get_template_directory_uri(); ?>/images/biophoton-poster.jpg" width="100%">
+        <?php
 
-              <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
+// check if the repeater field has rows of data
+if( have_rows('biophoton_videos') ):
 
-                <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mov" type="video/mov">
+  // loop through the rows of data
+    while ( have_rows('biophoton_videos') ) : the_row(); ?>
+
+        
+        
+        <video controls poster="<?php the_sub_field('biophoton_video_poster'); ?>" width="100%">
+
+              <source src="<?php the_sub_field('biophoton_video_file'); ?>" type="video/mp4">
+
+                <source src="<?php the_sub_field('biophoton_video_file'); ?>" type="video/mov">
 
              <!--  <source src="mov_bbb.ogg" type="video/ogg"> -->
 
             </video>
+    
+    <?php
+
+    endwhile; 
+
+
+
+    // no rows found
+
+endif;
+
+?>
+
+          
 
         </div>
 
@@ -856,16 +879,11 @@ Performance</li>
       <div class="container clearfix">
 
         <div class="BioPhoton-Field-left">
-
-         <h4> UNHEALTHY BIOPHOTON FIELD  </h4>
-
-         <h5> Stressors / Trauma </h5>
-
-         <p> Incoherent Light Emission </p>
+              <?php the_field('unhealthy_biophoton_field_title'); ?>
 
           <ul>
 
-           <li>Sympathetic Response Fight or Flight </li>
+           <!-- <li>Sympathetic Response Fight or Flight </li>
 
            <li>Increased Inflammation </li>
 
@@ -883,11 +901,32 @@ Performance</li>
 
            <li>Mitochondrial Damage </li>
 
-           <li>Telomeres Decay </li>
+           <li>Telomeres Decay </li> -->
+           <?php
+
+            // check if the repeater field has rows of data
+            if( have_rows('unhealthy_biophoton_facts') ):
+
+              // loop through the rows of data
+                while ( have_rows('unhealthy_biophoton_facts') ) : the_row(); ?>
+              
+
+              <li><?php the_sub_field('biophoton_facts');?></li>
+                    
+                    
+
+               <?php
+
+                endwhile;
+
+            
+            endif;
+
+            ?>
 
           </ul>
 
-          <span class="bioPhoton-field-bottom">  Sick HRV = Sick body   </span>
+          <span class="bioPhoton-field-bottom">  <?php the_field('unhealthy_biophoton_in_brief');?>   </span>
 
         </div>
 
@@ -895,57 +934,42 @@ Performance</li>
 
         <div class="BioPhoton-Field-center ">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/images/biophoton-field-img.png" />
+          <img src="<?php the_field('comparison_featured_biophoton_image');?>" />
 
         </div>
 
         
 
         <div class="BioPhoton-Field-right">
-
-         <h4> HEALTHY BIOPHOTON FIELD  </h4>
-
-         <h5> No Stressors / Trauma </h5>
-
-         <p> Coherent Light Emission </p>
+          <?php the_field('healthy_biophoton_field_title'); ?>
 
           <ul>
 
-           <li>Parasympathetic Response
+           <?php
 
-Rest & Regeneration </li>
+            // check if the repeater field has rows of data
+            if( have_rows('healthy_biophoton_facts') ):
 
-           <li>Decreased Inflammation</li>
+              // loop through the rows of data
+                while ( have_rows('healthy_biophoton_facts') ) : the_row(); ?>
+              
 
-           <li>Positively Impacting
+              <li><?php the_sub_field('biophoton_fact');?></li>
+                    
+                    
 
-Performance</li>
+               <?php
 
-           <li>Supporting 100,000 
+                endwhile;
 
-BiochemicalReactions in 
+            
+            endif;
 
-the Cell every Second</li>
-
-           <li>Reinforcing Cell to Cell
-
-Communication </li>
-
-           <li>Precise BioPhoton Field
-
-Regulation</li>
-
-           <li>Restful Revitalizing Sleep</li>
-
-           <li>Decreased Cellular Aging</li>
-
-           <li>Mitochondrial Energy</li>
-
-           <li>Telomeres Restoration</li>
+            ?>
 
           </ul>
 
-          <span class="bioPhoton-field-bottom">  Healthy HRV = Healthy body </span>
+          <span class="bioPhoton-field-bottom">  <?php the_field('healthy_biophoton_in_brief');?> </span>
 
         </div>
 
@@ -966,13 +990,54 @@ Regulation</li>
 
          <span class="section-devider"> </span>
 
-         <h2> REAL LIFE RESULT </h2>
+         <h2> <?php the_field('real_life_section_title');?> </h2>
 
        </div>
 
        
 
        <div class="real-life-row clearfix">
+
+       <?php
+
+// check if the repeater field has rows of data
+if( have_rows('repeater_field_name') ):
+
+  // loop through the rows of data
+    while ( have_rows('real_life_results') ) : the_row(); ?>
+
+        // display a sub field value
+        the_sub_field('sub_field_name');
+
+        <div class="real-life-col">
+
+         <div class="real-life-img">
+
+          <img src="<?php the_sub_field('real_life_result_image'); ?>" />
+
+         </div>
+
+         <div class="real-life-text">
+
+          <h4> <a href="<?php the_sub_field('real_life_result_link'); ?>">  <?php the_sub_field('real_life_result_title'); ?> </a> </h4>
+
+          <p> <?php the_sub_field('real_life_result_in_brief'); ?> </p>
+
+         </div>
+
+        </div>
+
+   <?php
+
+    endwhile;
+
+
+
+    // no rows found
+
+endif;
+
+?>
 
        
 
@@ -1065,7 +1130,7 @@ Regulation</li>
 
          <div class="personal-consultations-call">
 
-          <span> <i class="fa fa-phone" aria-hidden="true"></i> Call Now: </span> <a href="tel:(561) 203-5407"> (561) 203-5407 </a>
+          <span> <i class="fa fa-phone" aria-hidden="true"></i> Call Now: </span> <a href="tel: <?php the_field('phone_number_format');?>">  <?php the_field('phone_number_format');?> </a>
 
          </div>
 
@@ -1089,12 +1154,12 @@ Regulation</li>
 
          <span class="section-devider"> </span>
 
-         <h3> UNDERSTANDING CORE VIBRATIONAL BLUEPRINT </h3>
+         <!-- <h3> UNDERSTANDING CORE VIBRATIONAL BLUEPRINT </h3>
 
          <p> According to quantum physics, everything in the universe, living and non-living is in a state of vibrational resonance.  What was once thought to be solid matter is now discovered to be energy that consists of wavelengths, vibrations and frequencies. </p>
 
-         <p> All matter is made up of atoms, and atoms because of their unique makeup are always moving and vibrating. As electrons within these atoms move and spin around the nucleus, these electrons give off a precise vibrations and frequencies like mini radio transmitters.  How precise, so precise that no two substances in the universe have the exact same vibrational blueprint or frequency.  </p>
-
+         <p> All matter is made up of atoms, and atoms because of their unique makeup are always moving and vibrating. As electrons within these atoms move and spin around the nucleus, these electrons give off a precise vibrations and frequencies like mini radio transmitters.  How precise, so precise that no two substances in the universe have the exact same vibrational blueprint or frequency.  </p> -->
+         <?php the_field('vibrational_blueprint_content');?>
          <div class="btn-read-more">
 
           <a href="#"> Read More + </a>
@@ -1107,11 +1172,7 @@ Regulation</li>
 
          <span class="section-devider"> </span>
 
-         <h3> Vibrational Medicine </h3>
-
-         <p> For many people the concept of Vibrational Medicine which is also referred to as energy medicine, is hard to understand at first, but we actually live in world of vibrations and frequencies and these vibrations and frequencies are a part of everyday life.   </p>
-
-         <p> When you hear a sound, your eardrum vibrates and you are actually hearing one form of vibrating energy.  When you see a color which is a wavelength of light, you are actually seeing another form of vibrating energy.  When you smell something, you are actually sensing another form of vibrating energy.  There’s no escaping it, everything in the universe is made up of and consists of vibrations and frequencies.    </p>
+         <?php the_field('vibrational_medicine_content');?>
 
          <div class="btn-read-more">
 
@@ -1138,10 +1199,8 @@ Regulation</li>
 
          <span class="section-devider"> </span>
 
-         <h3> TESTIMONIALS </h3>
-
-         <h2> WHAT THEY SAY </h2>
-         <a href="#" class="btn podcast">VIEW ALL PODCAST <i class="fa fa-long-arrow-right"></i></a>
+         <?php the_field('testimonial_section_title');?>
+         <a href="<?php the_field('testimonial_button_link');?>" class="btn podcast testimonial"><?php the_field('testimonial_button_text');?> <i class="fa fa-long-arrow-right"></i></a>
 
        </div>
 
@@ -1215,13 +1274,13 @@ Regulation</li>
 
          <span class="section-devider"> </span>
 
-         <h2> GET IN TOUCH WITH US </h2>
+         <h2> <?php the_field('contact_section_title');?> </h2>
 
        </div>
 
        <div class="get-in-touch-col">
 
-         <form>
+         <!-- <form>
 
           <div class="form-fild">
 
@@ -1253,7 +1312,10 @@ Regulation</li>
 
           </div>
 
-        </form> 
+        </form>  -->
+        <?php 
+        $contact_form_shortcode = get_field('contact_form_shortcode');
+        echo do_shortcode($contact_form_shortcode);?>
 
        </div>
 

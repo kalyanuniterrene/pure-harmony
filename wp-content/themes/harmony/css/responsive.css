@@ -192,7 +192,7 @@ nav ul li a{
 	margin-top: 0
 }
 .list-inline{
-	    margin-top: -18px;
+	    margin-top: 0px;
 }
 .BioPhoton-Field-row h4{
 	font-size: 30px
@@ -275,7 +275,7 @@ nav ul li a{
 	margin-top: 0
 }
 
-.video_container{
+#how .video_container{
 	float: right;
 	width: 48%;
 	margin-top: 0
@@ -345,6 +345,10 @@ nav ul li a{
 	width: 45%;
 	min-height: 453px;
 }
+.BioPhoton-Field-row ul li{
+	background-position: 0 7px
+}
+
  }
  @media (max-width:1150px){ 
 .search_social{
@@ -438,6 +442,10 @@ h1{
 }
 #BioPhoton-top .section-devider{
 	width: 61px
+}
+
+.list-inline{
+	margin-top: 18px;
 }
 
 }
@@ -691,6 +699,11 @@ nav .f_left{
 	left:50%;
     transform: translateX(-50%);
 }
+
+#activate .video_container{
+	margin-top: 20px
+}
+
 }
 
   	
@@ -905,11 +918,24 @@ h1{
 	top: 58%;
 }
 
+#how .video_container{
+	width: 100%
+}
+
+#positive_impact .list ul{
+	margin: 0px 0 !important;
+	margin-top: inherit;
+}
+#positive_impact .list ul li{
+	line-height: 38px
+}
 }
 
 
 @media (max-width:680px){
-
+#gallery  .content .section-heading h2{
+	line-height: 66px
+}
 }
 
 
@@ -1004,6 +1030,13 @@ h1{
 #inner_banner img{
 	min-height: 230px
 }
+#robert .robert-left-content p, #stressors p, .text-col p, .real-life-text p, .testimonial-text p{
+	text-align: justify;
+}
+#gallery .galleryRight .galleryImgHolder li{
+	width: 47%
+}
+
 }
 
 
@@ -1199,6 +1232,10 @@ h1{
 .testimonial_section .test_box{
 	width: 100%
 }
+#activate p{
+	text-align: justify;
+}
+
 }
 
 @media (max-width:460px){
@@ -1216,7 +1253,13 @@ h1{
 }
 
 @media (max-width:420px){
+#positive_impact .impact_content{
+	padding: 20px 2px 10px 2px
+}
 
+.price{
+	margin-top: 0
+}
 }
 
 @media (max-width:390px){
@@ -1263,11 +1306,10 @@ h1{
 #inner_banner h1{
 	top: 75%
 }
-
+#positive_impact .impact_content{
+	padding:20px 2px 10px 2px
 }
-
-
-
+}
 
 
 @media (max-width:360px){
@@ -1287,6 +1329,11 @@ h1{
 #positive_impact .list ul li{
 	font-size: 13px
 }
-
+#positive_impact .list ul{
+	width: 49%
+}
+.pdf-text{
+	text-align: center;
+}
 }
 
