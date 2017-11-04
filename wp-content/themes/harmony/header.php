@@ -179,9 +179,12 @@ endif;
         </div>
         <?php } ?>
 
-        <?php if( is_page('all-podcasts') ){ ?>
+        <?php if( is_page('all-podcasts') ){
+          $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
+
+         ?>
         <div id="inner_banner">           
-           <img src="images/inner_banner.jpg" alt="#">
+           <img src="<?php echo $image[0];?>" alt="#">
            <h4>Enter The New Paradigm of</h4>
            <h1>OPTIMUM HEALTH AND WELLNESS</h1>
         </div>
