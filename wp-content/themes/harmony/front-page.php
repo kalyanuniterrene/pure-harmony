@@ -432,65 +432,39 @@ get_header(); ?>
 
                     <ul class="list-inline">
 
-                      <li>
+
+
+                    <?php
+$banner_args = array( 'post_type' => 'harmony-gallery', 'posts_per_page' => -1, 'order' => 'DESC', 'orderby' => 'date' );
+        $banner_query = new WP_Query( $banner_args ); 
+        while ( $banner_query->have_posts() ) { 
+                  $banner_query->the_post(); 
+
+                  $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
+                  ?>
+
+                   <li>
 
                         <div class="gallery_item">
 
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_item_1.jpg" alt="" data-src="<?php echo get_template_directory_uri(); ?>/images/gallery_bg.jpg">
+                          <img src="<?php echo $image[0] ?>" alt="" data-src="<?php echo $image[0] ?>">
 
                         </div>
 
                       </li>
+                
 
-                      <li>
 
-                        <div class="gallery_item">
+                <?php
+              } 
 
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_item_2.jpg" alt="" data-src="<?php echo get_template_directory_uri(); ?>/images/gallery_bg.jpg">
 
-                        </div>
+                wp_reset_postdata();
 
-                      </li>
 
-                      <li>
+                    ?>
 
-                        <div class="gallery_item">
-
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_item_3.jpg" alt="" data-src="<?php echo get_template_directory_uri(); ?>/images/gallery_bg.jpg">
-
-                        </div>
-
-                      </li>
-
-                      <li>
-
-                        <div class="gallery_item">
-
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_item_4.jpg" alt="" data-src="<?php echo get_template_directory_uri(); ?>/images/gallery_bg.jpg">
-
-                        </div>
-
-                      </li>
-
-                      <li>
-
-                        <div class="gallery_item">
-
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_item_5.jpg" alt="" data-src="<?php echo get_template_directory_uri(); ?>/images/gallery_bg.jpg">
-
-                        </div>
-
-                      </li>
-
-                      <li>
-
-                        <div class="gallery_item">
-
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_item_6.jpg" alt="" data-src="<?php echo get_template_directory_uri(); ?>/images/gallery_bg.jpg">
-
-                        </div>
-
-                      </li>
+                      
 
                       <a href="#" class="btn podcast">VIEW ALL GALLERY <i class="fa fa-long-arrow-right"></i></a>
 
@@ -1179,23 +1153,34 @@ Regulation</li>
 
         <div class="owl-carousel">
 
+        <?php
+
+                   $banner_args = array( 'post_type' => 'harmony-testimonials', 'posts_per_page' => -1, 'order' => 'ASC', 'orderby' => 'date' );
+                $banner_query = new WP_Query( $banner_args ); 
+                while ( $banner_query->have_posts() ) 
+
+                { 
+
+                  $banner_query->the_post(); 
+
+                  $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
+                  ?>
+
          <div class="item">
 
           <div class="testimonial-client-img">
 
-           <img src="<?php echo get_template_directory_uri(); ?>/images/client-img.jpg">
+           <img src="<?php echo $image[0] ; ?>">
 
           </div>
 
           <div class="testimonial-text">
 
-           <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porttitor mauris et risus euismod, varius vehicula sem tincidunt. Quisque eu scelerisque magna. Praesent dui libero, euismod nec lorem et, blandit vestibulum ante. Aenean nec ultricies dui. Mauris id sem facilisis, molestie nulla quis, tincidunt felis. Proin venenatis eros ut dolor rutrum, ultricies porta mauris tincidunt. Aliquam eu pulvinar velit. Nulla ultricies lacus sed lacinia egestas. </p>
-
-           <p> Etiam ac nisl at velit aliquet pulvinar. Morbi rutrum ac justo sit amet luctus. Aenean ac dapibus metus. Interdum et malesuada fames ac ante ipsum primis in faucibus.... </p>
+           <?php the_content();?>
 
            <div class="client-name">
 
-            <h5> Jenifer, House Wife, CA </h5>
+            <h5>  <?php the_title();?> </h5>
 
            </div>
 
@@ -1203,53 +1188,14 @@ Regulation</li>
 
          </div>
 
-         <div class="item">
+         <?php
+          }
 
-          <div class="testimonial-client-img">
+          wp_reset_postdata();
 
-           <img src="<?php echo get_template_directory_uri(); ?>/images/client-img.jpg">
+                     ?>
 
-          </div>
-
-          <div class="testimonial-text">
-
-           <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porttitor mauris et risus euismod, varius vehicula sem tincidunt. Quisque eu scelerisque magna. Praesent dui libero, euismod nec lorem et, blandit vestibulum ante. Aenean nec ultricies dui. Mauris id sem facilisis, molestie nulla quis, tincidunt felis. Proin venenatis eros ut dolor rutrum, ultricies porta mauris tincidunt. Aliquam eu pulvinar velit. Nulla ultricies lacus sed lacinia egestas. </p>
-
-           <p> Etiam ac nisl at velit aliquet pulvinar. Morbi rutrum ac justo sit amet luctus. Aenean ac dapibus metus. Interdum et malesuada fames ac ante ipsum primis in faucibus.... </p>
-
-           <div class="client-name">
-
-            <h5> Jenifer, House Wife, CA </h5>
-
-           </div>
-
-          </div>
-
-         </div>
-
-         <div class="item">
-
-          <div class="testimonial-client-img">
-
-           <img src="<?php echo get_template_directory_uri(); ?>/images/client-img.jpg">
-
-          </div>
-
-          <div class="testimonial-text">
-
-           <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porttitor mauris et risus euismod, varius vehicula sem tincidunt. Quisque eu scelerisque magna. Praesent dui libero, euismod nec lorem et, blandit vestibulum ante. Aenean nec ultricies dui. Mauris id sem facilisis, molestie nulla quis, tincidunt felis. Proin venenatis eros ut dolor rutrum, ultricies porta mauris tincidunt. Aliquam eu pulvinar velit. Nulla ultricies lacus sed lacinia egestas. </p>
-
-           <p> Etiam ac nisl at velit aliquet pulvinar. Morbi rutrum ac justo sit amet luctus. Aenean ac dapibus metus. Interdum et malesuada fames ac ante ipsum primis in faucibus.... </p>
-
-           <div class="client-name">
-
-            <h5> Jenifer, House Wife, CA </h5>
-
-           </div>
-
-          </div>
-
-         </div>
+         
 
         </div>
 
