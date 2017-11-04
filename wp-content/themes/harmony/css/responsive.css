@@ -1,0 +1,1220 @@
+
+
+/* CSS Document */
+
+
+
+
+
+
+
+/*@media (min-width:2561px){
+
+  
+
+  .container{
+
+		 width: 1884px !important;
+
+	 }
+
+}*/
+
+
+
+@media (min-width:1921px){
+
+.container{
+
+	width: 1920px;
+
+}
+
+}
+
+@media (max-width:1920px){
+.container{
+	width: 1355px;
+}
+
+}
+
+@media (max-width:1775px){
+
+nav li{
+	margin:0;
+}
+.suport-right{
+	right: 50px;
+}
+
+
+}
+
+
+
+@media (max-width:1680px){
+.container{
+	width: 1285px;
+}
+
+.description{
+	width: 46%
+}
+.sell{
+	width: 42%
+}
+#positive_impact .list ul li{
+	font-size: 16px
+}
+
+}
+
+@media (max-width:1600px){
+.suport-right{
+	right: 0
+}
+.book-it-box{
+	width:68%;
+}
+}
+
+@media (max-width:1542px){
+.podcast-text{
+	background: rgba(0,0,0,.8);
+	padding: 15px
+}
+}
+
+@media (max-width:1500px){
+.testimonial-text p{
+	font-size: 14px
+}
+ }
+
+
+
+ @media (max-width:1440px){
+
+.container{
+	width: 1170px;
+}
+
+nav ul li a{
+	font-size: 13px
+}
+
+.sell{
+	width:50%;
+}
+#positive_impact .list ul{
+	padding:0 10px;
+}
+#how .right_content .box:nth-of-type(2){
+	padding-left: 92px
+}
+#how .right_content .box:nth-of-type(3){
+	padding-left: 88px;
+}
+#how .right_content .box:nth-of-type(4){
+	margin-top: 44px;
+}
+.activate-overlay{
+	padding:80px 120px ;
+}
+
+.pdf-text{
+	width: 78%
+}
+#activate .pdf-text a{
+	font-size:18px;
+}
+.BioPhoton-Field-row h5{	
+	font-size: 36px
+}
+.BioPhoton-Field-row p{
+	font-size: 25px;
+	text-align: center;
+}
+.BioPhoton-Field-center{
+	margin-left: 17px;
+}
+.BioPhoton-Field-row h4{
+	font-size: 32px
+}
+.personal-consultations-call a{
+	font-size: 50px;
+}
+.personal-consultations-row h4{
+	font-size: 26px;
+}
+.personal-consultations-row h3{
+	font-size: 36px
+}
+.testimonial-left::before{
+	top: 36%;
+}
+
+}
+@media (max-width:1366px){
+#pure_pendant .sell .row .sell_box{
+	margin: 10px 5px
+}
+.suport-row{
+	padding: 50px 0 48px 0;
+}
+.testimonial-left::before{
+	right: -1px
+}
+.testimonial-client-img{
+	width: 90px
+}
+.testimonial-right h2{
+	font-size: 60px
+}
+.testimonial-right h3{
+	font-size: 32px
+}
+#gallery .galleryLeft{
+	padding-right: 20px
+}
+
+.activate-right{
+	padding: 0px 260px 30px 40px;
+}
+#activate .video_container{
+	    margin-top: 76px;
+}
+.text-col p{
+	margin-top: 0
+}
+.list-inline{
+	    margin-top: -18px;
+}
+.BioPhoton-Field-row h4{
+	font-size: 30px
+}
+.BioPhoton-Field-right{
+
+	width: 30%
+}
+
+.testimonial-right{
+	    padding: 16% 0;
+}
+}
+
+@media (max-width:1280px){
+  h1{
+  	font-size:4.25rem;
+  }
+#banner h4{
+	font-size:2rem;
+}
+#gallery .galleryLeft{
+   padding-right: 20px;
+}
+.suport-right{
+	display: none;
+}
+
+.BioPhoton-box-row{
+	padding-top: 50px
+}
+
+.book-it-box{
+	width: 100%
+}
+
+}
+
+@media (max-width:1200px){ 
+.container{
+	width: 1024px;
+}
+.logo{
+	width: 23%;
+	top: 29px
+}
+#pure_pendant .contnt p{
+	font-size: 16px;
+	line-height: 28px
+}
+.sell{
+	width: 50%
+}
+
+#positive_impact .impact_content{
+	width: 70%
+}
+
+#how .left_content{
+	width: 100%;
+	padding-right: 0px;
+}
+
+#how .right_content{
+	width: 100%;
+	padding-left: 0px;
+	margin-top: 100px
+}
+#how .left_content p{
+	width: 48%;
+	float: left;
+	margin-top: 0
+}
+
+.video_container{
+	float: right;
+	width: 48%;
+	margin-top: 0
+}
+#how .section-heading{
+	margin-bottom: 30px
+}
+
+.activate-right {
+    padding: 80px 120px 70px 40px;
+}
+
+.video_container{
+	    width: 100%;
+	    margin-bottom: 30px
+}
+.robert-person-bg{
+	background-image: none;
+}
+.robert-head .section-heading{
+	text-align: center;
+}
+#robert h4{
+	text-align: center;
+}
+#robert .section-devider{
+	margin-right: 0px;
+}
+
+.robert-right-video{
+	float: none;
+	margin:0 auto;
+	width: 70%
+}
+.activate-overlay{
+	padding: 100px 120px;
+}
+#robert .robert-left-content{
+	width: 70%;
+	margin:0 auto;
+	float: none;
+
+}
+
+.BioPhoton-Field-row p{
+	font-size: 18px;
+}
+.BioPhoton-Field-row ul li{
+	font-size: 16px;
+	padding-bottom: 14px;
+}
+.bioPhoton-field-bottom{
+	font-size: 18px;
+}
+
+.real-life-col{
+	    width: 29%;
+}
+.personal-consultations-call a{
+	font-size: 37px;
+	padding-left: 14px;
+}
+.personal-consultations-call{
+	margin-top: 15px;
+}
+
+ }
+ @media (max-width:1150px){ 
+.search_social{
+	margin-right: 50px
+ }
+ #gallery .main_gallery_content{
+ 	padding-top: 40px;
+ }
+#gallery .galleryRight .galleryImgHolder{
+	vertical-align: top
+}
+.section-heading h2{
+	font-size: 52px;
+}
+#gallery  .content .section-heading h4{
+	font-size: 30px
+}
+.real-life-col{
+	width: 30%
+}
+.real-life-text h4{
+	font-size: 22px
+}
+.real-life-text{
+	padding: 15px;
+}
+
+.vibrational-medicine-left h3, .vibrational-medicine-right h3{
+	font-size: 32px;
+}
+.vibrational-medicine-left h3{
+	padding-top: 0px;
+}
+.vibrational-medicine-left p, .vibrational-medicine-right p{
+	text-align: justify;
+}
+.testimonial-text p{
+	font-size: 12px
+}
+.client-name h5{
+	padding: 12px 0 15px 0;
+}
+}
+
+@media (max-width:1150px){ 
+.search_social{
+	margin-right: 140px
+ }
+}
+
+@media (max-width:1024px){
+	.container{
+	width: 992px;
+  }
+.social{
+	display: none !important
+}
+.search_social{
+	margin-right: 0px
+}
+
+#banner .content{
+	top: 62%
+}
+h1{
+	font-size: 3.25em
+}
+#banner h4{
+	font-size: 1.45rem
+}
+
+#activate .pdf-text a{
+	font-size: 16px;
+	line-height: 25px
+}
+.section-heading h2{
+	font-size: 52px;
+}
+.activate-overlay{
+	    padding: 80px 60px;
+}
+
+#stressors .section-devider{
+	margin-left: 142px;
+}
+#BioPhoton-top .section-devider{
+	width: 61px
+}
+
+}
+
+
+
+@media (max-width:991px){ 
+
+ .container{
+	width: 780px;
+}
+.search_social{
+	display: none;
+}
+.phone_number{
+	display: none;
+}
+/*nav{
+	display: none;
+}*/
+.logo{
+	width: auto;
+	left:80px;
+	transform: translateX(0);
+	top: 7px
+}
+
+.top{
+	height: 95px
+}
+
+.logo .desktop{
+	display: none;
+  }
+
+  .logo .responsive{
+	display: block;
+}
+.hamburger{
+	display: block;
+}
+nav{
+	height: auto;
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	top: 0;
+	z-index: 99999999999;
+	background: rgba(19,21,23,.90);
+	transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	left: -110%
+
+}
+.nav_close{
+	display: block;
+}
+
+nav .container{
+	width: auto
+}
+nav .f_left, nav .f_right{
+	float: none;
+}
+nav li{
+	display: block;
+}
+nav ul li a{
+	line-height: 40px
+}
+nav .f_right ul{
+	float: left;
+}
+nav li:first-child{
+	margin:0;
+}
+nav ul li a{
+	padding:0;
+	font-size: 14px
+}
+nav li:last-child{
+	margin:0;
+}
+nav li:last-child a, nav li:first-child a{
+	padding: 0
+}
+nav .f_right ul{
+	text-align: left;
+}
+nav .f_left{
+	margin-top: 20px
+}
+.book_btn{
+	margin: 10px auto;
+	width: 220px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px
+}
+
+.description, .sell{
+	width: 100%
+}
+.description, .sell{
+	margin-top: 50px
+}
+#pure_pendant .section-heading{
+	margin-bottom: 0;
+}
+
+#pure_pendant .sell .row .sell_box{
+
+	width:48%;
+}
+
+#pure_pendant .sell .row .sell_box img{
+	width: 86% !important
+}
+
+#positive_impact .impact_content{
+	width: 88%;
+}
+
+.activate-col{
+	width: 100% !important;
+}
+
+.activate-right{
+	width: 100% !important
+}
+.activate-right{
+	padding: 40px
+}
+#gallery .galleryLeft{
+	width: 100%;
+	float: none;
+}
+#gallery .videoHolder{
+	width: 100%;
+	max-width: 100%
+}
+#gallery .galleryRight{
+	width: 100%;
+	margin-top: 30px
+}
+#gallery .galleryRight .galleryImgHolder li{
+	width: 31%
+}
+
+#gallery .galleryLeft{
+	    padding-right: 0px;
+}
+
+#stressors .section-heading{
+	text-align: center;
+}
+#stressors .section-devider{
+	margin-left: 0
+}
+.stressors-right{
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px
+}
+
+.stressors-left{
+	width: 100%
+}
+
+.book-it-col h4{
+	font-size: 20px !important;
+	text-align: left;
+}
+
+.book-it-col h5{
+	font-size: 18px !important;
+	text-align: left;
+}
+.book-it-col span{
+	font-size: 32px;
+	padding-top: 10px;
+}
+
+.book-it-col{
+	font-size: 20px
+}
+.book-it-btn a{
+	font-size: 15px
+}
+
+.BioPhoton-Field-center{
+	    margin-left: 11px;
+}
+.BioPhoton-Field-row h5{
+	font-size: 28px
+}
+
+.BioPhoton-Field-row p{
+	font-size: 16px
+}
+.BioPhoton-Field-row h4{
+	font-size: 24px
+}
+.BioPhoton-top-row{
+	padding: 60px 0 30px 0;
+}
+.personal-consultations-left{
+	width: 100%;
+	border-right:none
+}
+.personal-consultations-right{
+	width: 100%
+}
+
+.personal-consultations-left h4, .personal-consultations-left h3{
+	text-align: center;
+}
+.personal-consultations-call{
+	text-align: center;
+}
+.testimonial-left::before{
+	top: 33%;
+}
+.testimonial-right{
+	    padding: 17% 0;
+}
+
+.get-in-touch-col{
+	width: 90%
+}
+.get-in-touch-row{
+	padding: 80px 0 75px 0;
+}
+}
+
+  	
+
+@media (max-width:900px){ 
+ .testimonial-right{
+	    padding: 20% 0;
+}
+}
+
+@media (max-width:768px){
+	.container{
+	width: 560px;
+}
+h1{
+	font-size: 2.25rem
+}
+#banner h4{
+	font-size: 1.25rem
+}
+
+.book_btn{
+	display: none;
+}
+.banner_carve{
+	bottom: 10px
+}
+.section-heading h2{
+	font-size: 52px
+}
+#pure_pendant h4{
+	font-size: 20px
+}
+#pure_pendant h5{
+	font-size: 19px
+}
+.description, .sell{
+	margin-top: 20px
+}
+#pure_pendant .sell .row .sell_box{
+	width:46%;
+
+}
+
+#positive_impact .impact_content{
+	margin: 0 auto;
+	width: 96%;
+	padding:20px;
+}
+#positive_impact .list ul{
+	width: 45%
+}
+#positive_impact .impact_content{
+	background-size: cover
+}
+#how .left_content p{
+	width: 100%;
+	float: none;
+}
+.video_container{
+	float: none;
+	width: 100%
+}
+#how .right_content{
+	background-size: 50%;
+	background-position: 0 90px
+}
+#how .right_content .box:nth-of-type(1){
+	right: 0;
+	left: auto;
+	top: 0
+}
+#how .right_content .box h3{
+	font-size: 28px
+}
+#how .right_content .box h3 span{
+	font-size: 35px
+}
+#how .right_content .box p{
+	font-size: 14px
+}
+#how .right_content .box{
+	margin: 15px 0 !important;
+	padding-left: 40px !important
+}
+#how .right_content .box:nth-of-type(2){
+	padding-left: 0
+}
+
+#how .right_content .box:nth-of-type(3){
+	padding-left: 0
+}
+#how .right_content .box:nth-of-type(4){
+	left: auto
+}
+#how .right_content{
+	margin-top: 50px
+}
+
+.robert-right-video{
+	width:100%;
+}
+#robert .robert-left-content{
+	width: 100%
+}
+.book-it-box{
+	padding: 15px;
+}
+.book-it-col{
+	width: 32%;
+	font-size: 16px;
+}
+
+.book-it-col h4{     
+	font-size: 16px !important; 
+} 
+.book-it-col h5{    
+ font-size: 16px !important; 
+}
+.book-it-btn a{     
+	font-size: 13px 
+}
+
+.text-col{
+	width: 100%
+ }
+.video-col{
+	width: 100%
+}
+
+.BioPhoton-box-row{
+	padding-top: 0
+}
+
+.BioPhoton-Field-left, .BioPhoton-Field-right{
+	width: 100%;
+	background: #f5f5f5;
+	padding:20px;
+}
+.BioPhoton-Field-top-row .BioPhoton-Field-center{
+	display: none;
+}
+.BioPhoton-Field-right{
+	width: 100%;
+	margin-top: 40px
+}
+
+#BioPhoton2 .BioPhoton-Field-right, #BioPhoton2 .BioPhoton-Field-left{
+	background: #fff
+}
+.BioPhoton-Field-center{
+	display: none;
+}
+.real-life-col{
+	width:80%;
+	float: none;
+	margin: 20px auto;
+}
+.real-life-text{
+	min-height: auto
+}
+
+.vibrational-medicine-left, .vibrational-medicine-right{
+	width: 100%
+}
+.vibrational-medicine-left h3, .vibrational-medicine-right h3{
+	font-size: 26px	
+}
+.btn-read-more{
+	padding-top: 10px;
+}
+.btn-read-more a{
+	font-size: 14px
+}
+.testimonial-left, .testimonial-right{
+	width: 100%
+}
+.testimonial-left::before{
+	display: none;
+}
+.testimonial-right{
+	background: none
+}
+.testimonial-right .overlay-box{
+	background: none
+}
+.testimonial-right{
+	    padding: 5% 0;
+}
+.invited{
+	display: none;
+}
+.testimonial-right h2{
+	color: #131517
+}
+.testimonial-text p{
+	font-size: 15px
+}
+.section-heading h2{
+	font-size: 42px
+}
+
+}
+
+
+@media (max-width:680px){
+
+}
+
+
+@media (max-width:560px){
+  h1{
+  	font-size: 2rem
+  }
+  #banner{
+  	padding-top: 95px
+  }
+  #banner h4{
+  	font-size: 1rem
+  }
+#banner .content{
+	top: 50%
+}
+
+.banner_carve{
+	bottom: 5px
+}
+
+.container{
+	width: 460px
+}
+
+#pure_pendant .sell .buy_btn{
+	width: 100%;
+    margin-top: 15px
+
+}
+#pure_pendant .sell .select{
+	width: 100%;
+	margin: 0
+}
+
+#pure_pendant .sell .row .sell_box, #pure_pendant .sell .row .sell_box img{
+	width: 98%
+}
+.sell{
+	padding-left: 0
+}
+#pure_pendant p.note{
+	font-size: 14px
+}
+#robert h4{
+	font-size: 22px
+}
+#robert .robert-left-content{
+	padding-left: 0;
+	background: none
+}
+.section-heading h2{
+	font-size: 42px;
+}
+#gallery  .content .section-heading h2{
+	line-height: 58px;
+}
+
+#gallery  .content .section-heading h4{
+	font-size: 24px
+}
+#gallery .galleryLeft{
+	min-height:auto;
+}
+
+#gallery .galleryRight .galleryImgHolder li{
+	width: 46%;
+}
+#stressors h4{
+	font-size: 26px;
+}
+.book-it-col{
+	width: 100%;
+	text-align: left;	
+}
+.book-it-col-right{
+	text-align: left;
+}
+.book-it-col span{
+	display: block;
+	margin-right: 20px
+}
+.book-it-col h4, .book-it-col h5{
+	text-align: left;
+}
+.book-it-col.book-it-col-center, .book-it-col-right{
+	padding-left: 56px
+}
+.book-it-col-right{
+ margin-top: 30px
+}
+
+}
+
+
+
+@media (max-width: 480px){
+
+.container{
+	width: 350px;
+}
+h1{
+	font-size: 1.25rem
+}
+#banner h4 {
+    font-size: .7rem;
+}
+
+#prev{
+	left:2%;
+}
+#next{
+	right: 2%
+}
+#next, #prev{
+	top: 42%
+}
+.logo{
+	left: 20px;
+	top: 18px
+}
+.hamburger{
+	right:20px;
+}
+.logo img.responsive{
+	max-width: 77%;
+}
+#pure_pendant .icon, #pure_pendant .contnt{
+	width: 100%;
+	float: none;
+	margin:0 auto;
+}
+.description, .sell{
+	margin-top: 0px;
+	text-align: center;
+}
+#pure_pendant .contnt h4{
+	font-size: 20px;
+	text-align: center;
+}
+
+#pure_pendant .contnt p{
+	text-align: justify;
+}
+#pure_pendant .section-heading{
+	margin-bottom: 0px
+}
+.description{
+	    padding-right: 0px;
+}
+
+.section-heading h2{
+	font-size: 42px;
+}
+#positive_impact .impact_content{
+	width: 100%
+}
+#positive_impact h2{
+	font-size: 42px
+}
+#positive_impact  h4{
+	font-size: 18px;
+}
+#positive_impact h5{
+	font-size: 16px
+}
+#positive_impact .list ul{
+	margin-top: 10px
+}
+#pure_pendant{
+	    padding: 40px 0 40px 0;
+}
+
+#how .right_content .box{
+	width: 100%
+}
+#how .right_content{
+	background-position: center center;
+}
+#how .right_content .box{
+	background: rgba(237,186,109,.9);
+	margin-top: 5px !important;
+	padding:10px !important;
+	text-align: center;
+}
+#how .right_content .box h3, #how .right_content .box p{
+	text-align: center;
+	color: #13153e
+}
+#how .right_content .box h3 span{
+	color: #13153e;
+	font-size: 29px
+}
+
+#how .right_content .box p{
+	color: #fff
+}
+.pdf-icon{
+	display: none;
+}
+.pdf-text{
+	width: 100%
+}
+#activate .pdf-text a{
+  text-align: center !important;
+}
+.section-heading h2{
+	font-size: 35px;
+}
+#gallery  .content .section-heading h4{
+	font-size: 20px
+}
+#gallery .galleryRight .galleryImgHolder li{
+	width:44%;
+}
+
+#gallery .galleryRight .galleryImgHolder li{
+	width: 98%
+}
+#gallery .galleryRight .galleryImgHolder .gallery_item img{
+	width: 100%
+}
+
+#stressors h4{
+	font-size: 22px
+}
+#stressors{
+	padding: 40px 0
+}
+.text-col p{
+	text-align: justify;
+}
+#stressors p{
+	text-align: justify;
+}
+.BioPhoton-top-row{
+	    padding: 20px 0 20px 0;
+	}
+.real-life-col{
+	width:100%;
+}	
+
+.real-life-row{
+	    padding-top: 0;
+}
+
+.personal-consultations-row h3{
+	font-size: 27px;
+}
+.personal-consultations-row h4{
+	font-size: 19px
+}
+.personal-consultations-call span{
+	font-size: 19px
+}
+.personal-consultations-call a{
+	font-size: 28px
+}
+.testimonial-right h2{
+	font-size: 45px
+}
+.testimonial-right h3{
+	    font-size: 28px;
+}
+.get-in-touch-col{
+	width:100%;
+}
+.footer-col h3{
+	font-size: 22px;
+}
+.footer-col .footer-contact a{
+	font-size: 32px
+}
+
+}
+
+@media (max-width:460px){
+#stressors h4{
+	font-size: 19px
+}
+.stressors-left{
+	padding-top: 0px;
+}
+
+}
+
+@media (max-width:430px){
+
+}
+
+@media (max-width:420px){
+
+}
+
+@media (max-width:390px){
+
+.section-heading h2{
+	font-size: 36px;
+}
+#pure_pendant h4{
+	font-size: 18px;
+}
+#pure_pendant h5{
+	font-size: 16px;
+}
+
+.section-heading h2{
+	font-size: 30px
+}
+.BioPhoton-Field-row h4{
+	font-size: 20px;
+}
+.personal-consultations-call span{
+	display: block;
+}
+.personal-consultations-call span i{
+	display: none;
+}
+.personal-consultations-call a{
+	padding-left: 0;
+	font-size: 36px
+}
+
+.footer-col h3{
+	font-size: 20px
+}
+.footer-col .footer-contact a{
+	font-size: 26px
+}
+
+}
+
+
+
+
+
+@media (max-width:360px){
+
+	.container{
+
+	width: 300px;
+
+}
+#positive_impact .impact_content{
+	padding: 10px;
+}
+#positive_impact h2{
+	margin-top: 10px;
+	    font-size: 38px;
+}
+#positive_impact .list ul li{
+	font-size: 13px
+}
+
+}
+
