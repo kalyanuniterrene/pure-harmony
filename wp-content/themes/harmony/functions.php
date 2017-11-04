@@ -65,7 +65,7 @@ function harmony_theme_enqueue_style() {
 	wp_enqueue_script( 'harmony-index', get_template_directory_uri() . '/js/index.js', array('jquery'), true );
 	wp_enqueue_script( 'harmony-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), true );
 }
-add_action( 'wp_enqueue_scripts', 'harmony_theme_enqueue_style' );
+//add_action( 'wp_enqueue_scripts', 'harmony_theme_enqueue_style' );
 
 //registered sidebar
 //add_action( 'widgets_init', 'harmony_theme_widgets_init' );
