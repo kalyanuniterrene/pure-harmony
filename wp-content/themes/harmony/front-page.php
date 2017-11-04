@@ -889,63 +889,6 @@ endif;
 
        
 
-        <div class="real-life-col">
-
-         <div class="real-life-img">
-
-          <img src="<?php echo get_template_directory_uri(); ?>/images/real-life-1.jpg" />
-
-         </div>
-
-         <div class="real-life-text">
-
-          <h4> <a href="javascript:void(0)">  Kate Criswell - Runner From Colorado </a> </h4>
-
-          <p> The call from Robert couldn't have come at a better time!  Any runner will tell you that the only way to get over PF is to stop running.  I did just the opposite and have enjoyed my 50 plus mile weeks again!  So thankful for Robert, the pendant, and moomyio!!! </p>
-
-         </div>
-
-        </div>
-
-       <!-- **************** --> 
-
-        <div class="real-life-col">
-
-         <div class="real-life-img">
-
-          <img src="<?php echo get_template_directory_uri(); ?>/images/real-life-2.jpg" />
-
-         </div>
-
-         <div class="real-life-text">
-
-          <h4> <a href="javascript:void(0)"> Michael Hochstetler - an international 5* licensed Grand Prix rider </a> </h4>
-
-          <p> The call from Robert couldn't have come at a better time!  Any runner will tell you that the only way to get over PF is to stop running.  I did just the opposite and have enjoyed my 50 plus mile weeks again!  So thankful for Robert, the pendant, and moomyio!!! </p>
-
-         </div>
-
-        </div>
-
-       <!-- ********************* -->  
-
-        <div class="real-life-col">
-
-         <div class="real-life-img">
-
-          <img src="<?php echo get_template_directory_uri(); ?>/images/real-life-3.jpg" />
-
-         </div>
-
-         <div class="real-life-text">
-
-          <h4> <a href="javascript:void(0)"> David Devine - Water Skier From Texas </a> </h4>
-
-          <p> The call from Robert couldn't have come at a better time!  Any runner will tell you that the only way to get over PF is to stop running.  I did just the opposite and have enjoyed my 50 plus mile weeks again!  So thankful for Robert, the pendant, and moomyio!!! </p>
-
-         </div>
-
-        </div>
 
         
 
