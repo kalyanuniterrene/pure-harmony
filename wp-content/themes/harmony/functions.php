@@ -123,3 +123,43 @@ function harmony_home_banner_slider(){
 		)
 	);
 }
+
+//Podcast Post Types
+add_action( 'init', 'harmony_podcasts');
+function harmony_podcasts(){
+
+	//podcast post type
+	register_post_type( 'harmony-podcasts',
+	array(
+		'labels' => array(
+			'name' => __( 'Podcasts' ),
+			'singular_name' => __( 'Podcast' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'menu_icon' => 'dashicons-images-alt',
+		'rewrite' => array('slug' => 'harmony-podcasts'),
+		'supports' => array( 'title','thumbnail'),
+		)
+	);
+}
+
+//Gallery Post Types
+add_action( 'init', 'harmony_gallery');
+function harmony_gallery(){
+
+	//gallery post type
+	register_post_type( 'harmony-gallery',
+	array(
+		'labels' => array(
+			'name' => __( 'Gallery' ),
+			'singular_name' => __( 'Gallery' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'menu_icon' => 'dashicons-images-alt',
+		'rewrite' => array('slug' => 'harmony-gallery'),
+		'supports' => array( 'title','thumbnail'),
+		)
+	);
+}
